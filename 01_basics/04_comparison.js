@@ -10,7 +10,7 @@
 
 // console.log(null > 0); // false
 // console.log(null == 0); // false
-// console.log(null >= 0); // true => >= converts null to number → 0; So it becomes: 0 >= 0 → true
+// console.log(null >= 0); // true -> >= converts null to number → 0; So it becomes: 0 >= 0 → true
 
 // console.log(undefined == 0);
 // console.log(undefined > 0);
@@ -24,6 +24,7 @@ console.log("2" === 2);
 
 /* 
 Best way to remember about null is that you request a temperature from a server and server gave us a null not zero (because zero is a value and not empty) due to server cant able to fetch temperature 
+
 Type Conversion:-
 
 
