@@ -23,7 +23,7 @@ e.g. variables etc [primitive]
 // myArr.shift() // // add the value at the start of the array
 
 // console.log(myArr.includes(9)); // its checks the values its exists or not on the array and reture the value true or false 
-// console.log(myArr.indexOf(9)); // its checks the index of the given value whether its exists or not on the array and returns the value -1 if dont exists or i
+// console.log(myArr.indexOf(9)); // its checks the index of the given value whether its exists or not on the array and returns the value -1 if dont exists or it will return the index no. of the value
 
 const newArr = myArr.join() // Add all the elements of an array into a string, separated by the specified separator string.
 
