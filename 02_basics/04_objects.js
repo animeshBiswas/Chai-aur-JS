@@ -49,14 +49,14 @@ const users = [
     }
 ]
 
-console.log(users[1].email);
-console.log(tinderUser);
+// console.log(users[1].email);
+// console.log(tinderUser);
 
-console.log(Object.keys(tinderUser)); // [ 'id', 'name', 'isLoggedIn' ]
-console.log(Object.values(tinderUser)); // [ '123abc', 'Animesh', false ]
-console.log(Object.entries(tinderUser)); // [ [ 'id', '123abc' ], [ 'name', 'Animesh' ], [ 'isLoggedIn', false ] ]
+// console.log(Object.keys(tinderUser)); // [ 'id', 'name', 'isLoggedIn' ]
+// console.log(Object.values(tinderUser)); // [ '123abc', 'Animesh', false ]
+// console.log(Object.entries(tinderUser)); // [ [ 'id', '123abc' ], [ 'name', 'Animesh' ], [ 'isLoggedIn', false ] ]
 
-console.log(tinderUser.hasOwnProperty('isLoggedIn')); // true
+// console.log(tinderUser.hasOwnProperty('isLoggedIn')); // true
 
 /*
 To learn more about object property then go the browser then inspect element and go to console and enter 
@@ -64,3 +64,33 @@ const obj1 = {1: "a", 2: "b"}
 then next line enter >obj1
 from the propotype on the below you will see list of property
 */ 
+
+
+
+// ########################################################
+// Object de-structure
+
+const course = {
+    coursename: "js in hindi",
+    price: "999",
+    courseInstructor: "hitesh",
+}
+
+// course.courseInstructor
+
+const {courseInstructor: instructor} = course
+
+// console.log(courseInstructor); // hindi 
+console.log(instructor);
+
+// {      <= this json structure 
+//     "name": "Animesh",
+//     "coursename": "js in hindi",
+//     "price": "free"
+// }
+
+[
+    {},
+    {},
+    {}
+]
