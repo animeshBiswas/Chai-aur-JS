@@ -31,7 +31,7 @@ output :-
 
 
 console.log(Array.isArray("Hitesh")); // False
-console.log(Array.from("Hitesh")); // conversions from anything i.e. as of noe its string to array
+console.log(Array.from("Hitesh")); // conversions from anything i.e. as of now its string to array
 /*
 output :-
 [ 'H', 'i', 't', 'e', 's', 'h' ]
