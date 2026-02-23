@@ -51,7 +51,7 @@ function addone(num){
     return num + 1
 }
 
-addTwo(5)
+addTwo(5) // error due to executions context
 
 const addTwo = function(num){   // <= function expressions
     return num + 2
