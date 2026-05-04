@@ -84,7 +84,7 @@ setInterval(function(){
 
 ```Javascript
 
-const randomNumber = parseInt(Math.random() * 100 + 1);
+let randomNumber = parseInt(Math.random() * 100 + 1);
 
 const submit = document.querySelector('#subt');
 const userInput = document.querySelector('#guessField');
@@ -102,12 +102,13 @@ let playGame = true;
 
 if (playGame) {
   submit.addEventListener('click', function (e) {
-    e.preventDefault();
+    e.preventDefault(); //preventDefault is used to stop the default behaviour of form because form usually sends to data to somewhere else like server but to prevent to do that we have this functions and instead should perform here.
     const guess = parseInt(userInput.value);
     validateGuess(guess);
   });
 }
 
+//validateGuess will check the number given by the user to check given number is valid or not
 function validateGuess(guess) {
   if (isNaN(guess)) {
     alert('Please enter a valid number');
@@ -128,6 +129,7 @@ function validateGuess(guess) {
   }
 }
 
+//checkGuess will compare the given number with random generate number
 function checkGuess(guess) {
   if (guess == randomNumber) {
     displayMessage(`You guessed it right`);
@@ -138,7 +140,8 @@ function checkGuess(guess) {
     displayMessage(`Number is TOOO High`);
   }
 }
-// or cleanUpguess
+
+// or cleanUpguess is used for clean the input box before user enter another guess and increment number of guess and update remaining to guess
 function displayGuess(guess) {
   userInput.value = '';
   guessSlot.innerHTML += `${guess} ,`;
